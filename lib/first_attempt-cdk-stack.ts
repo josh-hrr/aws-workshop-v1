@@ -2,7 +2,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as sns from 'aws-cdk-lib/aws-sns';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as nodejs from 'aws-cdk-lib/aws-lambda-nodejs'; 
-import { Construct } from 'constructs';
+import { Construct } from '../node_modules/constructs/lib';
 import { Runtime } from 'aws-cdk-lib/aws-lambda';
 import { Effect, PolicyStatement } from 'aws-cdk-lib/aws-iam';
 import { S3EventSource } from 'aws-cdk-lib/aws-lambda-event-sources'; 
