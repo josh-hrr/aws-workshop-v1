@@ -45,9 +45,8 @@ export class FirstAttemptCdkStack extends cdk.Stack {
     topic.grantPublish(lambda);
     lambda.addEventSource(new S3EventSource(bucket, {
       events: [ s3.EventType.OBJECT_CREATED]
-    }))
- 
+    })) 
 
-    //testing commit
+    //testing second commit
   }
 }
